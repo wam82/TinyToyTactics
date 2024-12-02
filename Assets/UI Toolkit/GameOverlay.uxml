@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Overlay.uss?fileID=7433441132597879392&amp;guid=8e216acd7d94d4e438f91d7b84918937&amp;type=3#Overlay" />
+    <ui:VisualElement name="Container" style="height: 100%; justify-content: flex-start;">
+        <ui:VisualElement name="GameInfoContainer" style="top: auto; width: 100%; height: 15%; bottom: auto; justify-content: flex-start; align-items: flex-start; display: flex; font-size: 25px;">
+            <ui:Label text="Time Elapsed: 0000" display-tooltip-when-elided="true" name="TimeElapsed" />
+            <ui:Label text="Score: 0000" display-tooltip-when-elided="true" name="Score" />
+            <ui:VisualElement name="Minimap" style="right: 1%; height: 150%; width: 15%; position: absolute; top: 10%; background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/RenderTextures/Minimap.renderTexture?fileID=8400000&amp;guid=a64f73fcd9f524b07ae6fc0a7100678c&amp;type=2#Minimap&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Weapons" style="position: absolute; bottom: 0; width: 25%; height: 20%; right: 0;">
+            <ui:VisualElement name="OverHeatContainer" style="width: 100%; height: 15%;">
+                <ui:ProgressBar title="Overheat: 0000" name="OverHeatBar" high-value="1" style="-unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); width: 100%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="WeaponsContainer" style="width: 100%; height: 90%; bottom: 0; background-color: rgb(55, 55, 55);">
+                <ui:VisualElement name="Weapon1" style="position: absolute; left: 0; width: 33%; height: 100%; right: auto;">
+                    <ui:VisualElement name="ImageContainer1" style="height: 70%; top: 10%; bottom: 10%; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgb(82, 81, 81); width: 90%; left: 5%; right: 5%; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Image1" style="width: 90%; height: 80%; left: 5%; top: 10%; right: 5%; bottom: 10%; background-image: url(&apos;project://database/Assets/Art/cannon.png?fileID=2800000&amp;guid=57a196054eb944b28a9ec833707c92b8&amp;type=3#cannon&apos;); background-color: rgba(255, 255, 255, 0.03);" />
+                    </ui:VisualElement>
+                    <ui:Label text="Cannon - 1" display-tooltip-when-elided="true" name="Text1" style="bottom: 5%; position: absolute; width: 100%; -unity-text-align: upper-center; -unity-font-style: bold;" />
+                    <ui:VisualElement name="ImageBlur1" class="blur" style="display: flex;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Weapon2" style="position: absolute; left: 33%; width: 33%; height: 100%; right: auto;">
+                    <ui:VisualElement name="ImageContainer2" style="height: 70%; top: 10%; bottom: 10%; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgb(82, 81, 81); width: 90%; left: 5%; right: 5%; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Image2" style="width: 90%; height: 80%; left: 5%; top: 10%; right: 5%; bottom: 10%; background-image: url(&apos;project://database/Assets/Art/missile.png?fileID=2800000&amp;guid=269cd1fe0ee4a4787b3426d34630f1fb&amp;type=3#missile&apos;); background-color: rgba(255, 255, 255, 0.03);" />
+                    </ui:VisualElement>
+                    <ui:Label text="Missile - 2" display-tooltip-when-elided="true" name="Text2" enable-rich-text="true" style="bottom: 5%; position: absolute; width: 100%; -unity-text-align: upper-center; -unity-font-style: bold;" />
+                    <ui:VisualElement name="ImageBlur2" class="blur" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Weapon3" style="position: absolute; left: auto; width: 33%; height: 100%; right: 0;">
+                    <ui:VisualElement name="ImageContainer3" style="height: 70%; top: 10%; bottom: 10%; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgb(82, 81, 81); width: 90%; left: 5%; right: 5%; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Image3" style="width: 90%; height: 80%; left: 5%; top: 10%; right: 5%; bottom: 10%; background-image: url(&apos;project://database/Assets/Art/machine-gun.png?fileID=2800000&amp;guid=38f2ad9801b244884af91e14a419f0cd&amp;type=3#machine-gun&apos;); background-color: rgba(255, 255, 255, 0.03);">
+                            <ui:VisualElement name="OverheatImage" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Art/overheat.png?fileID=2800000&amp;guid=66aa4ee8883cd46b69ddec68d631310e&amp;type=3#overheat&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="SMG - 3" display-tooltip-when-elided="true" name="Text3" style="bottom: 5%; position: absolute; width: 100%; -unity-text-align: upper-center; -unity-font-style: bold;" />
+                    <ui:VisualElement name="ImageBlur3" class="blur" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="HealthBarContainer" style="position: absolute; width: 25%; height: 15%; bottom: 0; left: 0; justify-content: center;">
+            <ui:ProgressBar title="Health: 0000" name="HealthBar" high-value="1" />
+        </ui:VisualElement>
+        <ui:VisualElement name="DifficultyContainer" style="top: auto; width: 100%; height: 15%; bottom: auto; justify-content: center; align-items: center; display: flex;">
+            <ui:Label text="Difficulty Increased: X Parameter got increased" display-tooltip-when-elided="true" name="DifficultyText" style="width: 100%; height: 100%; -unity-text-align: middle-center; font-size: 30px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
